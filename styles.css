@@ -440,6 +440,12 @@ img {
   background:
     radial-gradient(circle at top right, rgba(22,208,213,0.12), transparent 28%),
     rgba(255,255,255,0.06);
+  text-align: left;
+}
+
+.manifesto-panel .section-heading {
+  justify-items: start;
+  text-align: left;
 }
 
 .audience-panel {
@@ -463,8 +469,15 @@ img {
 }
 
 .manifesto-panel .section-heading h2 {
-  font-size: clamp(2rem, 3.2vw, 3.2rem);
-  max-width: none;
+  font-size: clamp(1.9rem, 3vw, 2.9rem);
+  max-width: 15ch;
+  text-wrap: balance;
+}
+
+.manifesto-panel p {
+  max-width: 42ch;
+  margin: 0;
+  text-align: left;
 }
 
 .audience-tags {
