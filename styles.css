@@ -774,6 +774,29 @@ textarea {
   padding: 24px;
 }
 
+.card,
+.service-card,
+.pillar,
+.timeline-item,
+.summary-card,
+.page-sidebar-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease;
+}
+
+.card:hover,
+.service-card:hover,
+.pillar:hover,
+.timeline-item:hover,
+.summary-card:hover,
+.page-sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(8, 18, 40, 0.16);
+}
+
 .card h3,
 .service-card h3,
 .entry-feature h3,
@@ -1221,41 +1244,45 @@ textarea {
 
 .page-hero {
   padding-top: 56px;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
 }
 
 .page-intro {
-  max-width: 72ch;
+  max-width: 78ch;
 }
 
 .page-intro h1 {
   margin: 0;
   font-family: "Oxanium", sans-serif;
-  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  font-size: clamp(2.2rem, 4.4vw, 4rem);
   line-height: 0.94;
   letter-spacing: -0.06em;
-  max-width: 12ch;
+  max-width: 13ch;
 }
 
 .page-intro p {
-  margin: 18px 0 0;
-  max-width: 58ch;
+  margin: 16px 0 0;
+  max-width: 42ch;
   color: #d6e5ff;
-  line-height: 1.7;
+  line-height: 1.58;
 }
 
 .page-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 28px;
+  margin-top: 26px;
+}
+
+.page-actions-centered {
+  justify-content: center;
 }
 
 .summary-grid,
 .seo-content-grid,
 .support-grid {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .summary-grid {
@@ -1279,18 +1306,33 @@ textarea {
 .summary-card h2,
 .page-sidebar-card h2 {
   margin: 0 0 12px;
-  font-size: 1.3rem;
+  font-size: 1.24rem;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
 }
 
 .summary-card p,
 .page-sidebar-card p {
   margin: 0;
   color: #466385;
-  line-height: 1.62;
+  line-height: 1.56;
 }
 
 .page-sidebar-card .result-list {
   margin-top: 16px;
+}
+
+.summary-card .mini-label,
+.page-sidebar-card .mini-label {
+  display: inline-flex;
+  margin-bottom: 12px;
+}
+
+.cta-note {
+  max-width: 40ch;
+  margin: 14px auto 0;
+  color: #5d7ba8;
+  font-size: 0.94rem;
 }
 
 .floating-cta {
