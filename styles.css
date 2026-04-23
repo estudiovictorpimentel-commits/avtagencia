@@ -327,7 +327,7 @@ img {
 .section-heading h2,
 .cta-card h2 {
   font-size: clamp(2.2rem, 4vw, 4rem);
-  max-width: 12ch;
+  max-width: 18ch;
 }
 
 .section-heading p,
