@@ -424,6 +424,48 @@ img {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+.manifesto-panel {
+  background:
+    radial-gradient(circle at top right, rgba(22,208,213,0.12), transparent 28%),
+    rgba(255,255,255,0.06);
+}
+
+.audience-panel {
+  display: grid;
+}
+
+.audience-card {
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.audience-card h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: "Oxanium", sans-serif;
+  font-size: 1.5rem;
+}
+
+.audience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.audience-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #e8f3ff;
+  font-size: 0.9rem;
+}
+
 .offer-stack {
   display: grid;
   gap: 18px;
