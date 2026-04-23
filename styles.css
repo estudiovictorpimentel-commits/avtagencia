@@ -367,7 +367,7 @@ img {
 }
 
 .proof-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card {
@@ -428,12 +428,40 @@ img {
   align-items: start;
 }
 
+.results-split {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
 .split-panel {
   padding: 28px;
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
   text-align: center;
+}
+
+.proof-panel .section-heading h2 {
+  font-size: clamp(1.7rem, 2.7vw, 2.6rem);
+  max-width: 15ch;
+  margin-inline: auto;
+}
+
+.proof-panel .proof-grid .card {
+  min-height: 220px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.proof-panel .proof-grid .card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.proof-panel .proof-grid .card p {
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .manifesto-panel {
