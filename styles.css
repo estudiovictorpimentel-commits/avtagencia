@@ -448,14 +448,17 @@ textarea {
 }
 
 .hero-panel-signature {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: min(100%, 790px);
+  margin: 0 auto;
 }
 
 .hero-panel-signature span {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 38px;
   padding: 0 14px;
   border-radius: 999px;
@@ -1275,6 +1278,10 @@ body.js-ready .reveal.is-visible {
   }
 
   .authority-ribbon-points {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel-signature {
     grid-template-columns: 1fr;
   }
 
