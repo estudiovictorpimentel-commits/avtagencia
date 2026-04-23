@@ -1116,6 +1116,23 @@ textarea {
   flex-wrap: wrap;
 }
 
+.footer-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.footer-meta {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  text-align: right;
+}
+
+.footer-meta span:last-child {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
 .floating-cta {
   position: fixed;
   right: 18px;
@@ -1352,5 +1369,10 @@ body.js-ready .reveal.is-visible {
 
   .footer-grid {
     padding-bottom: 62px;
+  }
+
+  .footer-meta {
+    justify-items: start;
+    text-align: left;
   }
 }
