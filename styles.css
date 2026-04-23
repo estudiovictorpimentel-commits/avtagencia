@@ -484,12 +484,20 @@ textarea {
     linear-gradient(180deg, rgba(16, 44, 95, 0.5), rgba(9, 28, 66, 0.2));
   border: 1px solid rgba(255, 255, 255, 0.08);
   min-height: 320px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-brand-card img {
-  width: min(100%, 480px);
+.hero-logo img,
+.logo-hero {
+  width: auto !important;
+  height: auto !important;
+  max-width: clamp(180px, 28vw, 360px);
+  max-height: 100%;
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+  display: block;
   filter: drop-shadow(0 20px 42px rgba(0, 0, 0, 0.26));
 }
 
