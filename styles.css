@@ -198,8 +198,9 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.4rem);
-  max-width: 12ch;
+  font-size: clamp(2.2rem, 4.4vw, 3.9rem);
+  max-width: 16ch;
+  text-wrap: balance;
 }
 
 .hero p {
@@ -333,7 +334,8 @@ img {
 .section-heading h2,
 .cta-card h2 {
   font-size: clamp(2.2rem, 4vw, 4rem);
-  max-width: 22ch;
+  max-width: 24ch;
+  text-wrap: balance;
 }
 
 .section-heading p,
@@ -384,13 +386,13 @@ img {
   margin: 0 0 10px;
   font-family: "Oxanium", sans-serif;
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .card p {
   margin: 0;
   color: #37517d;
-  text-align: center;
+  text-align: left;
 }
 
 .pillars {
@@ -404,7 +406,7 @@ img {
   border-radius: var(--radius-xl);
   background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
   border: 1px solid rgba(255,255,255,0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .pillar-index {
@@ -424,7 +426,7 @@ img {
 .split {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 22px;
+  gap: 24px;
   align-items: start;
 }
 
@@ -437,13 +439,12 @@ img {
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .proof-panel .section-heading h2 {
-  font-size: clamp(1.7rem, 2.7vw, 2.6rem);
-  max-width: 15ch;
-  margin-inline: auto;
+  font-size: clamp(1.6rem, 2.3vw, 2.3rem);
+  max-width: 17ch;
 }
 
 .proof-panel .proof-grid .card {
@@ -485,20 +486,20 @@ img {
   border-radius: var(--radius-xl);
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.12);
-  text-align: center;
+  text-align: left;
 }
 
 .audience-card h3 {
   margin-top: 0;
   margin-bottom: 18px;
   font-family: "Oxanium", sans-serif;
-  font-size: 1.12rem;
-  white-space: nowrap;
+  font-size: 1.02rem;
+  text-align: left;
 }
 
 .manifesto-panel .section-heading h2 {
-  font-size: clamp(1.9rem, 3vw, 2.9rem);
-  max-width: 15ch;
+  font-size: clamp(1.7rem, 2.5vw, 2.45rem);
+  max-width: 18ch;
   text-wrap: balance;
 }
 
@@ -517,7 +518,7 @@ img {
 .audience-tags span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 42px;
   padding: 0 16px;
   border-radius: 999px;
@@ -540,7 +541,7 @@ img {
   border: 1px solid rgba(10, 31, 69, 0.1);
   box-shadow: 0 18px 44px rgba(7, 26, 61, 0.08);
   color: var(--text-dark);
-  text-align: center;
+  text-align: left;
 }
 
 .offer-card p {
@@ -564,7 +565,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 .timeline {
@@ -578,7 +579,7 @@ img {
   border-radius: var(--radius-lg);
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
-  text-align: center;
+  text-align: left;
 }
 
 .timeline-item::before {
@@ -625,17 +626,18 @@ img {
 
 .agency-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 26px;
   padding: 30px;
   border-radius: var(--radius-xl);
   background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
   border: 1px solid rgba(255,255,255,0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .agency-kpis {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -657,8 +659,8 @@ img {
 }
 
 .cta-card h2 {
-  font-size: clamp(1.95rem, 3.8vw, 3.5rem);
-  max-width: 17ch;
+  font-size: clamp(1.75rem, 3vw, 3.05rem);
+  max-width: 20ch;
   margin-inline: auto;
   text-wrap: balance;
 }
@@ -735,6 +737,57 @@ img {
   margin-inline: auto;
 }
 
+#metodo .section-heading,
+#entrada .section-heading,
+.results-split .section-heading,
+#agencia .section-heading {
+  justify-items: start;
+  text-align: left;
+}
+
+#metodo .section-heading h2,
+#entrada .section-heading h2,
+.results-split .section-heading h2,
+#agencia .section-heading h2 {
+  max-width: 20ch;
+  font-size: clamp(1.8rem, 2.8vw, 2.7rem);
+}
+
+#metodo .section-heading p,
+#entrada .section-heading p,
+#agencia .section-heading p,
+.results-split .split-panel .result-list {
+  max-width: 58ch;
+  margin: 0;
+}
+
+.surface-section .section-heading h2,
+#servicos .section-heading h2 {
+  max-width: 20ch;
+  font-size: clamp(1.8rem, 2.9vw, 2.8rem);
+}
+
+.surface-section .section-heading p,
+#servicos .section-heading p {
+  max-width: 58ch;
+}
+
+.results-split .split-panel {
+  padding: 30px;
+}
+
+.proof-panel .section-heading {
+  margin-bottom: 24px;
+}
+
+.proof-panel .proof-grid .card {
+  min-height: 0;
+}
+
+#agencia .agency-kpis .card {
+  text-align: left;
+}
+
 .site-footer {
   padding: 26px 0 44px;
   color: rgba(255,255,255,0.72);
@@ -776,7 +829,8 @@ img {
   .problem-grid,
   .proof-grid,
   .services-grid,
-  .pillars {
+  .pillars,
+  .agency-kpis {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -809,8 +863,8 @@ img {
   }
 
   .hero h1 {
-    font-size: clamp(2.5rem, 11vw, 4.1rem);
-    max-width: 12ch;
+    font-size: clamp(2.3rem, 9.4vw, 3.5rem);
+    max-width: 13ch;
   }
 
   .audience-tags {
@@ -833,6 +887,10 @@ img {
   }
 
   .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .agency-kpis {
     grid-template-columns: 1fr;
   }
 
