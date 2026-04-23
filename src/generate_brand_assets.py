@@ -9,7 +9,7 @@ ASSETS = ROOT / "assets" / "brand"
 DESKTOP = Path("/Users/victorpimentel/Desktop")
 
 
-def remove_white_background(source: Path, target: Path) -> None:
+def remove_white_background(source: Path, target: Path, *, crop: bool = True) -> None:
     image = Image.open(source).convert("RGBA")
     pixels = image.load()
 
@@ -19,9 +19,10 @@ def remove_white_background(source: Path, target: Path) -> None:
             if r > 245 and g > 245 and b > 245:
                 pixels[x, y] = (255, 255, 255, 0)
 
-    bbox = image.getbbox()
-    if bbox:
-        image = image.crop(bbox)
+    if crop:
+        bbox = image.getbbox()
+        if bbox:
+            image = image.crop(bbox)
 
     image.save(target)
 
@@ -30,6 +31,11 @@ def main() -> None:
     remove_white_background(
         DESKTOP / "LOGO AVANT-05.png",
         ASSETS / "logo-avant-05-transparent.png",
+    )
+    remove_white_background(
+        DESKTOP / "LOGO AVANT-05.png",
+        ASSETS / "logo-avant-05-master-transparent.png",
+        crop=False,
     )
     remove_white_background(
         DESKTOP / "LOGO AVANT-04.png",
