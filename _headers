@@ -1,0 +1,11 @@
+/docs/*
+  X-Robots-Tag: noindex, nofollow
+
+/PDFs/*
+  X-Robots-Tag: noindex, nofollow
+
+/src/*
+  X-Robots-Tag: noindex, nofollow
+
+/*.md
+  X-Robots-Tag: noindex, nofollow

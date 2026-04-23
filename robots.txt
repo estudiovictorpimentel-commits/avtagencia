@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /PDFs/
+Disallow: /src/
+
+Sitemap: https://avtagencia.com/sitemap.xml
