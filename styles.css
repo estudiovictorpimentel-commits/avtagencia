@@ -199,7 +199,7 @@ img {
 
 .hero h1 {
   font-size: clamp(2.2rem, 4.4vw, 3.9rem);
-  max-width: 16ch;
+  max-width: 17ch;
   text-wrap: balance;
 }
 
@@ -420,7 +420,7 @@ img {
   color: white;
   font-family: "Oxanium", sans-serif;
   margin-bottom: 18px;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 .split {
@@ -519,13 +519,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 42px;
-  padding: 0 16px;
+  min-height: 40px;
+  padding: 0 14px;
   border-radius: 999px;
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.12);
   color: #e8f3ff;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .offer-stack {
@@ -660,7 +660,7 @@ img {
 
 .cta-card h2 {
   font-size: clamp(1.75rem, 3vw, 3.05rem);
-  max-width: 20ch;
+  max-width: 22ch;
   margin-inline: auto;
   text-wrap: balance;
 }
@@ -733,8 +733,14 @@ img {
 .contact-note {
   margin-top: 16px;
   color: #4f6f9f;
-  max-width: 34ch;
+  max-width: 30ch;
   margin-inline: auto;
+}
+
+.contact-panel .result-list {
+  max-width: 30ch;
+  margin-inline: auto;
+  text-align: left;
 }
 
 #metodo .section-heading,
@@ -763,8 +769,8 @@ img {
 
 .surface-section .section-heading h2,
 #servicos .section-heading h2 {
-  max-width: 20ch;
-  font-size: clamp(1.8rem, 2.9vw, 2.8rem);
+  max-width: 22ch;
+  font-size: clamp(1.7rem, 2.6vw, 2.55rem);
 }
 
 .surface-section .section-heading p,
